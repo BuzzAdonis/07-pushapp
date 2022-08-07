@@ -3,17 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { OneSignal } from '@awesome-cordova-plugins/onesignal/ngx';
+import { IonicStorageModule } from '@ionic/storage-angular';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot(),
+     AppRoutingModule,
+     IonicStorageModule.forRoot()
+    ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    OneSignal
   ],
   bootstrap: [AppComponent],
 })

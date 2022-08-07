@@ -19,10 +19,17 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "@angular/service-worker": "^14.0.0",
     "@awesome-cordova-plugins/onesignal": "^5.44.0",
+    "@ionic-native/onesignal": "^5.36.0",
     "@ionic/angular": "^6.1.9",
+    "@ionic/cli-plugin-cordova": "^1.6.2",
+    "@ionic/cli-plugin-ionic-angular": "^1.4.1",
     "@ionic/cordova-builders": "^7.0.0",
+    "@ionic/storage": "^3.0.6",
+    "@ionic/storage-angular": "^3.0.6",
     "cordova-android": "10.1.2",
+    "firebase": "^9.9.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
@@ -48,6 +55,7 @@
     "cordova-plugin-ionic-webview": "^5.0.0",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-sqlite-storage": "^6.0.0",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
@@ -60,7 +68,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "onesignal-cordova-plugin": "^3.0.4",
+    "onesignal-cordova-plugin": "^3.1.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "typescript": "~4.7.3"
@@ -73,6 +81,7 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
+      "cordova-sqlite-storage": {},
       "onesignal-cordova-plugin": {}
     },
     "platforms": [
